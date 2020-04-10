@@ -1,3 +1,8 @@
+$(window).on('load',function(){
+    $(".preloader").addClass("complete");
+    $(".load").addClass("complete");
+});
+
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.parallax').parallax();
