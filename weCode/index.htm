@@ -1,35 +1,207 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <link rel="stylesheet" href="./lib/css/home.css">
-  <title>Photo Ninja</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="./lib/css/home.css">
+    <title>weCode</title>
 </head>
-<body>
+<body id="home">
 
-  <!-- navbar -->
-    <header>
-
+<!-- navbar -->
+    <header >
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper">
+                <div class="container">
+                    <a href="#home" class="brand-logo">
+                        <img src="./img/weCode.png" alt="" class="wecode">
+                    </a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <!-- Normal -->
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#home" class="black-text">Home</a></li>
+                        <li><a href="#technologies" class="black-text">Technologies</a></li>
+                        <li><a href="#whatIDo" class="black-text">What I do</a></li>
+                        <li><a href="#feedback" class="black-text">Feedback</a></li>
+                    </ul>
+                    <!-- ------- -->
+                    <!-- mobile -->
+                    <ul class="sidenav indigo darken-3" id="mobile-menu">
+                        <li><a href="#home" class="white-text">Home</a></li>
+                        <li><a href="#technologies" class="white-text">Technologies</a></li>
+                        <li><a href="#whatIDo" class="white-text">What I do</a></li>
+                        <li><a href="#feedback" class="white-text">Feedback</a></li>
+                    </ul>
+                    <!-- ------- -->
+                    <div class="fixed-action-btn">
+                        <a class="btn-floating indigo pulse">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <ul>
+                            <li><a href="https://github.com/ShehanHD" class="tooltipped btn-floating black" data-tooltip="GitHub"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://gitlab.com/shehanhd" class="tooltipped btn-floating yellow darken-2" data-tooltip="GitLab"><i class="fab fa-gitlab"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCCtE9sVWSIXy7Rxq1maAV8Q" class="tooltipped btn-floating red" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="" class="tooltipped btn-floating red" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="" class="tooltipped btn-floating blue" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-  <!-- photo / grid -->
+<!-- languages / grid -->
+    <section class="container section scrollspy" id="technologies">
+        <h1 style="padding-bottom: 2vw;" class="indigo-text center">TECHNOLOGIES</h1>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/first.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l7 offset-l1">
+                <h5 class="indigo-text">Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam ut dicta asperiores delectus commodi architecto beatae. Quidem provident, ullam blanditiis autem dolore consequuntur a quod quos aspernatur libero minus!</p>
+            </div>
+        </div>
 
-  <!-- parallax -->
+        <div class="row">
+            <div class="col s12 l4 push-l8">
+                <img src="img/first.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l7 pull-l4 right-align">
+                <h5 class="indigo-text">Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam ut dicta asperiores delectus commodi architecto beatae. Quidem provident, ullam blanditiis autem dolore consequuntur a quod quos aspernatur libero minus!</p>
+            </div>
+        </div>
 
-  <!-- services / tabs -->
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/first.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l7 offset-l1">
+                <h5 class="indigo-text">Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam ut dicta asperiores delectus commodi architecto beatae. Quidem provident, ullam blanditiis autem dolore consequuntur a quod quos aspernatur libero minus!</p>
+            </div>
+        </div>
 
-  <!-- parallax -->
+        <div class="row">
+            <div class="col s12 l4 push-l8">
+                <img src="img/first.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="col s12 l7 pull-l4 right-align">
+                <h5 class="indigo-text">Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam ut dicta asperiores delectus commodi architecto beatae. Quidem provident, ullam blanditiis autem dolore consequuntur a quod quos aspernatur libero minus!</p>
+            </div>
+        </div>
+    </section>
+<!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/parallax.jpg" alt="">
+        </div>
+    </div>
+<!-- works / tabs -->
+    <section class="section scrollspy" id="whatIDo">
+    <div class="row">
+        <div class="col s12 l4">
+            <h2 class="indigo-text text-darken-4">What I do....</h2>
+            <p>ahsblhdlash</p>
+            <p>ahsblhdlash</p>
+            <p>ahsblhdlash</p>
+            <p>ahsblhdlash</p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#Programming" class="indigo-text text-darken-4">Programming</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#Web_Designing" class="indigo-text text-darken-4">Web Designing</a>
+                </li>
+            </ul>
+            <div class="col s12" id="Programming">
+                <p class="flow-text indigo-text text-darken-4">bla bla bla</p>
+                <p>ahsblhdlash</p>
+                <p>ahsblhdlash</p>
+                <p>ahsblhdlash</p>
+                <p>ahsblhdlash</p>
+            </div>
+            <div class="col s12" id="Web_Designing">
+                <p class="flow-text indigo-text text-darken-4">bla bla bla</p>
+                <p>ahsblhdlsddasd assaash</p>
+                <p>asdas  dasdasdasdassdaslash</p>
+                <p>ahsblhdladasd d sadsash</p>
+                <p>ahsblhddadasdasasddassdsalash</p>
+            </div>
+        </div>
+    </div>
+    </section>
+<!-- parallax -->
+    <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/parallax.jpg" alt="">
+    </div>
+    </div>
 
-  <!-- contact form -->
-
-  <!-- footer -->
-
+<!-- contact form -->
+    <section class="section container scrollspy" id="feedback">
+        <div class="row">
+            <div class="col s12 l5">
+                <h4>AAAAAAAA</h4>
+                <p>ahsblhdlsddasd assaash</p>
+                <p>asdas  dasdasdasdassdaslash</p>
+                <p>ahsblhdladasd d sadsash</p>
+                <p>ahsblhddadasdasasddassdsalash</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <h3 class="indigo-text text-darken-4">Feedback</h3>
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" name="email" id="email">
+                        <label for="email">Your E-mail</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea class="materialize-textarea" id="feedback"></textarea>
+                        <label for="feedback">Your Feedback</label>
+                    </div>       
+                    <div class="input-field center">
+                        <button style="width: 100%;" class="btn-small indigo waves-effect waves-light" id="submit-feedback">Submit</button>
+                    </div>        
+                </form>
+            </div>
+        </div>
+    </section>
+<!-- footer -->
+    <footer class="page-footer grey darken-3 scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>Abuot Me</h5>
+                    <p>ahsblhdlsddasd assaash</p>
+                    <p>asdas  dasdasdasdassdaslash</p>
+                    <p>ahsblhdladasd d sadsash</p>
+                    <p>ahsblhddadasdasasddassdsalash</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <p>ahsblhdlsddasd assaash</p>
+                <p>asdas  dasdasdasdassdaslash</p>
+                <p>ahsblhdladasd d sadsash</p>
+                <p>ahsblhddadasdasasddassdsalash</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2020 weCode</div>
+        </div>
+    </footer>
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>

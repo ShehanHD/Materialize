@@ -1,0 +1,43 @@
+.wecode{
+    width: 64px;
+}
+
+header{
+    background: url("./../../img/first.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+}
+
+@media screen and (max-width: 670px){
+    header{
+        min-height: 500px;
+    }
+    .wecode{
+        width: 56px;
+    }
+}
+
+.nav-wrapper{
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+.section{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.tabs .indicator{
+    background-color: rgb(68, 68, 245);
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background: transparent;
+}
+
+.sidenav-overlay{
+    z-index: 50;
+}
+.side-nav{
+    z-index: 100;
+}
