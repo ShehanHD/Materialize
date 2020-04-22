@@ -6,6 +6,59 @@ html {
     display: none;
 }
 
+/* preloader */
+.load{
+    z-index: 60;
+    position: fixed;
+    top: calc(40%);
+    left: calc(40%);
+    animation: load 3s 1s infinite;
+}
+
+@keyframes load{
+    0%{
+        transform: scale(1.2);
+    }
+    25%{
+        transform: scale(.8);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(.8);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.load.complete{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.preloader{
+    z-index: 50;  
+    content: '';
+    position: fixed;
+    left:0;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+    background-color:black;
+    transition: 1s;
+}
+
+.preloader.complete{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+/* end preloader */
+
 .wecode{
     width: 64px;
 }
@@ -35,6 +88,14 @@ img.responsive-img, video.responsive-video {
         max-width: 100%;
         height: auto;
         margin-top: 0%;
+    }
+
+    .load{
+        z-index: 60;
+        position: fixed;
+        top: calc(30%);
+        left: calc(25%);
+        animation: load 3s 1s infinite;
     }
 }
 
@@ -92,56 +153,3 @@ input[type=range]:focus {
     border-bottom: none !important;
     box-shadow: none !important;
 }
-
-/* preloader */
-.load{
-    z-index: 60;
-    position: fixed;
-    top: calc(40%);
-    left: calc(40%);
-    animation: load 3s 1s infinite;
-}
-
-@keyframes load{
-    0%{
-        transform: scale(1.2);
-    }
-    25%{
-        transform: scale(.8);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    75%{
-        transform: scale(.8);
-    }
-    100%{
-        transform: scale(1.2);
-    }
-}
-
-.load.complete{
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
-}
-
-.preloader{
-    z-index: 50;  
-    content: '';
-    position: fixed;
-    left:0;
-    height: 100%;
-    width: 100%;
-    opacity: .6;
-    background-color:black;
-    transition: 1s;
-}
-
-.preloader.complete{
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
-}
-
-/* end preloader */
