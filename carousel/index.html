@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <style>
+            body{
+                background-color: rgb(0, 0, 0);
+                background-image: url('./img/Confety.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            h2{
+                background-color: rgb(255, 145, 0);
+                text-align: center;
+                background: -webkit-linear-gradient(rgb(0, 255, 191), rgb(0, 217, 255), blue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            div{
+                overflow: visible !important;
+                margin-left: 50% !important; 
+                transform: translateX(-50%) !important;
+            }
+            img{
+                border: ridge wheat 5px;
+                margin: 2% !important;
+            }
+            audio{
+                margin-left: 50%; 
+                transform: translateX(-50%);
+            }
+        </style>
+    <title>Document</title>
+</head>
+<body>
+
+        <h2>Happy Birthday Ravi Sir</h2>
+
+        <audio controls>
+            <source src="./Happy_Birthday_80_s.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="./img/one.jpeg"></a>
+            <a class="carousel-item" href="#two!"><img src="./img/two.jpeg"></a>
+            <a class="carousel-item" href="#three!"><img src="./img/three.jpeg"></a>
+            <a class="carousel-item" href="#four!"><img src="./img/two.jpeg"></a>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+</body>
+</html>
