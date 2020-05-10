@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9,  user-scalable=no">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--Import Google Icon Font-->
@@ -12,7 +12,7 @@
         <style>
             body{
                 background-color: rgb(0, 0, 0);
-                background-image: url('./img/Confety.png');
+                background-image: url('./Confety.png');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -23,38 +23,74 @@
                 background: -webkit-linear-gradient(rgb(0, 255, 191), rgb(0, 217, 255), blue);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                width: 100%;
             }
             div{
                 overflow: visible !important;
                 margin-left: 50% !important; 
                 transform: translateX(-50%) !important;
             }
+            .a-img{
+                object-fit: cover;
+                overflow: hidden;
+                height: 500px !important;
+                line-height: 500px;  
+                width: 410px !important;
+                margin-top: 15% !important;
+            }
             img{
+                display: block;
+                width: 100vw;
+                height: inherit;
+                object-fit: cover;
+                vertical-align: middle;
                 border: ridge wheat 5px;
-                margin: 2% !important;
             }
             audio{
                 margin-left: 50%; 
                 transform: translateX(-50%);
             }
+            .down{
+                border-radius: 50px;
+                margin-left: 50%; 
+                transform: translateX(-50%);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .name{
+                color: black;
+                position: absolute;
+                line-height: 50px;  
+                font-size: 25px;
+                top: 50px;
+                left: -75px;
+                transform: rotate(-45deg);
+                background-color: rgba(191, 216, 208, 0.548);
+                width: 300px;
+                height: 50px;
+                text-align: center;
+            }
         </style>
     <title>Document</title>
 </head>
 <body>
-
+<div class="container">
         <h2>Happy Birthday Ravi Sir</h2>
-
-        <audio controls>
-            <source src="./Happy_Birthday_80_s.mp3" type="audio/mpeg">
+        <!-- autoplay -->
+        <audio controls >
+            <source src="./Country_Gentleman.mp3" type="audio/mpeg">
         </audio>
+        
+        <a href="./img.zip" class="waves-effect indigo pulse waves-light btn down valign-wrapper">Download Photos</a>
 
         <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="./img/one.jpeg"></a>
-            <a class="carousel-item" href="#two!"><img src="./img/two.jpeg"></a>
-            <a class="carousel-item" href="#three!"><img src="./img/three.jpeg"></a>
-            <a class="carousel-item" href="#four!"><img src="./img/two.jpeg"></a>
+            <a class="carousel-item a-img" href="#one!"><img src="./img/one.jpeg"><span class="name">Davide</span></a>
+            <a class="carousel-item a-img" href="#two!"><img src="./img/two.jpeg"><span class="name">Priyanka Madam</span></a>
+            <a class="carousel-item a-img" href="#three!"><img src="./img/three.jpeg"><span class="name">Nethan</span></a>
+            <a class="carousel-item a-img" href="#four!"><img style="height:initial; margin-top:20%" src="./img/four.jpeg"><span class="name" style="transform: rotate(0deg); left:0; top:30px; width:100%">Chamith Sir & Dilani Madam</span></a>
+            <a class="carousel-item a-img" href="#five!"><img src="./img/five.jpeg"><span class="name">Ricardo</span></a>
+            <a class="carousel-item a-img" href="#six!"><img src="./img/six.jpeg"><span class="name">Liyara</span></a>
         </div>
-
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
