@@ -44,7 +44,7 @@
                 height: inherit;
                 object-fit: cover;
                 vertical-align: middle;
-                border: ridge wheat 5px;
+                border: ridge rgb(179, 245, 245) 8px;
             }
             audio{
                 margin-left: 50%; 
@@ -75,8 +75,8 @@
 <body>
 <div class="container">
         <h2>Happy Birthday Ravi Sir</h2>
-        <!-- autoplay -->
-        <audio controls >
+        
+        <audio id="myAudio" controls autoplay>
             <source src="./Country_Gentleman.mp3" type="audio/mpeg">
         </audio>
         
@@ -95,6 +95,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script>
+        document.getElementById("myAudio").volume=0.3;
         $(document).ready(function(){
             $('.carousel').carousel();
         });
